@@ -1,0 +1,13 @@
+[ka8zrt]
+name=ka8zrt
+enabled=1
+gpgcheck=0
+baseurl=http://mirror.ka8zrt.com/local/$os/$releasever/$basearch/
+priority=90
+
+[ka8zrt-secure]
+name=ka8zrt-secure
+enabled=1
+gpgcheck=0
+baseurl=http://mirror.ka8zrt.com/local-secure/$os/$releasever/$basearch/
+priority=90
