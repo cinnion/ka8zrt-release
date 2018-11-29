@@ -32,14 +32,17 @@ pipeline {
                 }
             }
             steps {
+                rpmbuildCleanTree()
                 sshagent(['2bbe635f-1041-4c65-8448-28c7680f1e33']) {
                     sh '''
                         id
                         pwd
                         ls -la . /tmp/tito || :
+                        ls -laR rpmbuild
                         tito build --test --rpm
                         ls -la . /tmp/tito
                     '''
+                    titoPreserveBuildProducts()
                 }
             }
         }
