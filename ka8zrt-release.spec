@@ -1,5 +1,5 @@
 Name:           ka8zrt-release
-Version:        0.5.0
+Version:        0.5.1
 Release:        1%{?dist}
 Summary:        KA8ZRT local repository repo file and fixes for local mirroring.
 BuildArch:      noarch
@@ -55,6 +55,8 @@ restorecon -R /etc/yum.repos.d || :
 %doc
 
 %changelog
+* Sat Dec 01 2018 Douglas Needham <cinnion@gmail.com> 0.5.1-1
+- new package built with tito
 * Wed Nov 28 2018 Jenkins KA8ZRT <jenkins@ka8zrt.com> 0.5-1
 - new package built with tito, pre-jenkins
 * Sun Nov 11 2018 Douglas Needham <cinnion@gmail.com>
