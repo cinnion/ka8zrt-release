@@ -10,6 +10,7 @@ URL:            http://www.ka8zrt.com
 Source0:        http://www.ka8zrt.com/ka8zrt-release-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
+Requires(post): policycoreutils
 Requires(post): sed
 
 %description
